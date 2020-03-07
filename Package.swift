@@ -23,7 +23,7 @@ let package = Package(
             name: "ASDKCore",
             dependencies: [],
             path: "Sources/ASDKCore",
-//            publicHeadersPath: "PublicHeaders",
+            publicHeadersPath: "include",
             cSettings: [
                 .headerSearchPath("EverythingElse"),
                 
