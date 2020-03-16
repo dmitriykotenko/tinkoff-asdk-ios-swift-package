@@ -23,6 +23,7 @@
 #import "ASDKPaymentFormStarter.h"
 #import "ASDKUtils.h"
 
+#import "ASDKLocalized.h"
 #import "ASDKUI_Images.h"
 
 #define ASDKCreditCardPaymentSystemInputDefault         @"____ __________________"

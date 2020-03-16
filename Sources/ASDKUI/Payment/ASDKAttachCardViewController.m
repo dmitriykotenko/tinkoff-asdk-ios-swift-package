@@ -36,6 +36,8 @@
 #import "ASDKCardsListDataController.h"
 #import "ASDKLoopViewController.h"
 
+#import "ASDKLocalized.h"
+
 #define kASDKEmailRegexp @"[\\w_.-]+@[\\w_.-]+\\.[a-zA-Z]+"
 
 @interface ASDKAttachCardViewController () <UITextFieldDelegate>

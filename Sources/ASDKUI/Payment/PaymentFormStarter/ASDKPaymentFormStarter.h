@@ -21,7 +21,6 @@
 #import <UIKit/UIKit.h>
 #import <ASDKCore.h>
 #import "ASDKDesignConfiguration.h"
-#import "ASDKLocalized.h"
 #import <PassKit/PassKit.h>
 
 @protocol ASDKAcquiringSdkCardRequisites <NSObject>

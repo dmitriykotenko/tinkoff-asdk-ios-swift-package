@@ -26,6 +26,8 @@
 #import "ASDKAttachCardViewController.h"
 #import "ASDKLoopViewController.h"
 
+#import "ASDKLocalized.h"
+
 @interface ASDKPaymentFormStarter () <PKPaymentAuthorizationViewControllerDelegate>
 {
     UIStatusBarStyle _oldStatusBarStyle;

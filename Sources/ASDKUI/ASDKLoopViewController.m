@@ -34,6 +34,7 @@
 #import "ASDKMacroses.h"
 #import "ASDKUtils.h"
 #import "ASDKDesign.h"
+#import "ASDKLocalized.h"
 
 @interface ASDKLoopViewController () <UITextFieldDelegate>
 
