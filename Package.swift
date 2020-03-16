@@ -4,12 +4,16 @@
 import PackageDescription
 
 let package = Package(
-    name: "ASDKCore",
+    name: "ASDK",
     platforms: [.iOS(.v8)],
     products: [
         .library(
             name: "ASDKCore",
             targets: ["ASDKCore"]
+        ),
+        .library(
+            name: "ASDKUI",
+            targets: ["ASDKUI"]
         )
     ],
     targets: [
@@ -51,6 +55,36 @@ let package = Package(
                 .headerSearchPath("RequestBuilder/GetState"),
                 .headerSearchPath("RequestBuilder/Init"),
                 .headerSearchPath("RequestBuilder/RemoveCard")
+            ]
+        ),
+        .target(
+            name: "ASDKUI",
+            dependencies: ["ASDKCore"],
+            path: "Sources/ASDKUI",
+            publicHeadersPath: "PublicHeaders",
+            cSettings: [
+                .headerSearchPath("."),
+                
+                .headerSearchPath("Helpers"),
+                .headerSearchPath("3DSController"),
+
+                .headerSearchPath("Resources/Images"),
+                .headerSearchPath("Resources/Texts"),
+
+                .headerSearchPath("Payment"),
+                .headerSearchPath("Payment/PaymentFormStarter"),
+                
+                .headerSearchPath("Payment/PaymentViewController"),
+                .headerSearchPath("Payment/PaymentViewController/EmailCell"),
+                .headerSearchPath("Payment/PaymentViewController/InputCardCell"),
+                .headerSearchPath("Payment/PaymentViewController/CustomInput"),
+                .headerSearchPath("Payment/PaymentViewController/CustomInput/HighlightedButton"),
+
+                .headerSearchPath("Payment/CardsListViewController"),
+                .headerSearchPath("Payment/CardsListViewController/AddNewCardCell"),
+                .headerSearchPath("Payment/CardsListViewController/CardCell"),
+                
+                .headerSearchPath("Payment/CardListDataSource"),                
             ]
         )
     ]
