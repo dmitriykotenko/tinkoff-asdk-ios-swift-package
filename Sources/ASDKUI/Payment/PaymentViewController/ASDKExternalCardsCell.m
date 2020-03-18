@@ -68,7 +68,7 @@
 
 - (void)createChangeCardButton
 {
-    UIButton *changeCardButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    UIButton *changeCardButton = [UIButton buttonWithType:UIButtonTypeCustom];
     
     changeCardButton.translatesAutoresizingMaskIntoConstraints = NO;
     changeCardButton.contentMode = UIViewContentModeScaleToFill;
