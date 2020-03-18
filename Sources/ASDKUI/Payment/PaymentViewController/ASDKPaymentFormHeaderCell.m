@@ -51,6 +51,8 @@
     
     titleLabel.font = [UIFont systemFontOfSize:17];
     titleLabel.textColor = [ASDKDesign colorTextDark];
+    titleLabel.numberOfLines = 0;
+    titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
 
     [self.contentView addSubview:titleLabel];
     
@@ -78,6 +80,8 @@
     
     descriptionLabel.font = [UIFont systemFontOfSize:13];
     descriptionLabel.textColor = [ASDKDesign colorTextLight];
+    descriptionLabel.numberOfLines = 0;
+    descriptionLabel.lineBreakMode = NSLineBreakByWordWrapping;
 
     [self.contentView addSubview:descriptionLabel];
     
