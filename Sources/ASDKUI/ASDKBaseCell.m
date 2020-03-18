@@ -76,8 +76,8 @@
     self.shouldShowBottomSeparator = YES;
     self.shouldShowTopSeparator = NO;
     
-    [self.customTopSeparator setImage:[ASDKUtils imageFromColor:[ASDKDesign colorN4Separator]]];
-    [self.customBottomSeparator setImage:[ASDKUtils imageFromColor:[ASDKDesign colorN4Separator]]];
+    [self.customTopSeparator setImage:[ASDKUtils imageFromColor:[UIColor redColor]]];
+    [self.customBottomSeparator setImage:[ASDKUtils imageFromColor:[UIColor greenColor]]];
 }
 
 - (void)createTopSeparator
