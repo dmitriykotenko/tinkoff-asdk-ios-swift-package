@@ -68,7 +68,7 @@
 
 - (void)createChangeCardButton
 {
-    UIButton *changeCardButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIButton *changeCardButton = [UIButton buttonWithType:UIButtonTypeSystem];
     
     changeCardButton.translatesAutoresizingMaskIntoConstraints = NO;
     changeCardButton.contentMode = UIViewContentModeScaleToFill;
@@ -79,10 +79,6 @@
     
     [changeCardButton
      setTitleColor:[ASDKUtils colorWithInteger:0x128CC3]
-     forState:UIControlStateNormal];
-
-    [changeCardButton
-     setTitleColor:[UIColor whiteColor]
      forState:UIControlStateNormal];
 
     [self.contentView addSubview:changeCardButton];
