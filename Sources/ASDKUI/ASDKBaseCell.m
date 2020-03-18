@@ -39,12 +39,12 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
 
-    [self privateInit];
+    [self asdkBaseCell_privateInit];
 
     return self;
 }
 
-- (void)privateInit
+- (void)asdkBaseCell_privateInit
 {
     [self setupContentView];
     [self createSeparators];
