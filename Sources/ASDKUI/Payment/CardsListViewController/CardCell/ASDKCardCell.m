@@ -40,13 +40,6 @@
     return self;
 }
 
-- (instancetype)init
-{
-    self = [super init];
-    [self privateInit];
-    return self;
-}
-
 - (void)privateInit
 {
     [self createPaymentSystemLogo];

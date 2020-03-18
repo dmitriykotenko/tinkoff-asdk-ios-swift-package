@@ -32,13 +32,6 @@
     return self;
 }
 
-- (instancetype)init
-{
-    self = [super init];
-    [self createTitleLabel];
-    return self;
-}
-
 - (void)createTitleLabel
 {
     UILabel *addCardTitleLabel = [[UILabel alloc] init];
