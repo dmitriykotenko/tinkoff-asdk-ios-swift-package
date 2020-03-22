@@ -1,6 +1,4 @@
-# Swift package for Tinkoff Acquiring iOS SDK
-
-## Tinkoff Acquiring iOS SDK: https://github.com/TinkoffCreditSystems/tinkoff-asdk-ios
+# Swift package for [Tinkoff Acquiring iOS SDK](https://github.com/TinkoffCreditSystems/tinkoff-asdk-ios)
 
 Folders structure and project settings have been changed to build the project as swift package.
 
