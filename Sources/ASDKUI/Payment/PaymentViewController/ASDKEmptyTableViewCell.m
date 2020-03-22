@@ -6,6 +6,14 @@
 //  Copyright © 2017 TCS Bank. All rights reserved.
 //
 
+
+// ------------------------------------
+//
+// File was modified by Dmitry Kotenko.
+//
+// ------------------------------------
+
+
 #import "ASDKEmptyTableViewCell.h"
 #import "ASDKDesign.h"
 

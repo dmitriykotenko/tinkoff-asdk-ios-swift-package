@@ -15,6 +15,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+
+// ------------------------------------
+//
+// File was modified by Dmitry Kotenko.
+//
+// ------------------------------------
+
+
 #import "ASDKCardInputTableViewCell.h"
 
 #import <AVFoundation/AVFoundation.h>

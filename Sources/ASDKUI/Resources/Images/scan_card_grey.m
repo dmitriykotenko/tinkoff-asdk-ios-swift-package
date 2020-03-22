@@ -1,3 +1,10 @@
+// -----------------------------------
+//
+// File was created by Dmitry Kotenko.
+//
+// -----------------------------------
+
+
 #import "ASDKUI_Images.h"
 
 @implementation UIImage(scan_card_grey)

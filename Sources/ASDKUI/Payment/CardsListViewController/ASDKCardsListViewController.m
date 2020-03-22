@@ -17,6 +17,13 @@
 // limitations under the License.
 
 
+// ------------------------------------
+//
+// File was modified by Dmitry Kotenko.
+//
+// ------------------------------------
+
+
 #import "ASDKCardsListViewController.h"
 #import "ASDKCardCell.h"
 #import "ASDKAddNewCardCell.h"

@@ -17,6 +17,13 @@
 // limitations under the License.
 
 
+// ------------------------------------
+//
+// File was modified by Dmitry Kotenko.
+//
+// ------------------------------------
+
+
 #import "ASDKLoaderViewController.h"
 //#import "ASDKPaymentFormStarter.h"
 

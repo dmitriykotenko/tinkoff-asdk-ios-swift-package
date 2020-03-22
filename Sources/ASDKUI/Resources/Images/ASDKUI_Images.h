@@ -1,3 +1,10 @@
+// -----------------------------------
+//
+// File was created by Dmitry Kotenko.
+//
+// -----------------------------------
+
+
 #import <UIKit/UIKit.h>
 
 @interface UIImage(buttom_logos)

@@ -6,6 +6,14 @@
 //  Copyright © 2018 TCS Bank. All rights reserved.
 //
 
+
+// ------------------------------------
+//
+// File was modified by Dmitry Kotenko.
+//
+// ------------------------------------
+
+
 #import <Foundation/Foundation.h>
 
 #import "ASDKUI_Texts.h"

@@ -18,6 +18,14 @@
 // limitations under the License.
 //
 
+
+// ------------------------------------
+//
+// File was modified by Dmitry Kotenko.
+//
+// ------------------------------------
+
+
 #import "ASDKAttachCardViewController.h"
 #import "ASDKMacroses.h"
 #import "ASDKDesign.h"

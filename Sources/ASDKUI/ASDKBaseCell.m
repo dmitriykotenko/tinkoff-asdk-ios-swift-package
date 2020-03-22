@@ -17,6 +17,13 @@
 // limitations under the License.
 
 
+// ------------------------------------
+//
+// File was modified by Dmitry Kotenko.
+//
+// ------------------------------------
+
+
 #import "ASDKBaseCell.h"
 #import "ASDKUtils.h"
 #import "ASDKDesign.h"

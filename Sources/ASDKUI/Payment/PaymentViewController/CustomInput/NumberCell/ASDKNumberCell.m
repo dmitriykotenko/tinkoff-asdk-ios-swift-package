@@ -16,6 +16,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+
+// ------------------------------------
+//
+// File was modified by Dmitry Kotenko.
+//
+// ------------------------------------
+
+
 #import "ASDKNumberCell.h"
 
 #import "ASDKDesign.h"

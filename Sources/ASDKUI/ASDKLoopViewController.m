@@ -18,6 +18,14 @@
 // limitations under the License.
 //
 
+
+// ------------------------------------
+//
+// File was modified by Dmitry Kotenko.
+//
+// ------------------------------------
+
+
 #import "ASDKLoopViewController.h"
 #import <ASDKApiKeys.h>
 #import <ASDKAcquiringSdk.h>

@@ -16,6 +16,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+
+// ------------------------------------
+//
+// File was modified by Dmitry Kotenko.
+//
+// ------------------------------------
+
+
 #import "ASDKEmailCell.h"
 #import "ASDKDesign.h"
 #import "ASDKMacroses.h"
