@@ -2,7 +2,7 @@
 
 Folders structure and project settings have been changed to build the project as swift package.
 
-Asset-based images replaced by core-graphics-based images.
+Asset-based images replaced by CoreGraphics-based images.
 
 Localizable strings replaced by code-based texts.
 
