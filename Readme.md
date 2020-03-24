@@ -9,3 +9,5 @@ Localizable strings replaced by code-based texts.
 Views with XIB-based layout were modified: layout now is created programmatically inside view initializer.
 
 Otherwise, original code has not been changed.
+
+Tinkoff Acquiring iOS SDK reference: https://static2.tinkoff.ru/acquiring/manuals/ios_sdk.pdf.
