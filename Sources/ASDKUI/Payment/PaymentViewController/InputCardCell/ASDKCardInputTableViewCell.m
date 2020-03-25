@@ -244,7 +244,9 @@ typedef enum
         _viewCardNumber.backgroundColor = [UIColor whiteColor];
     }
     
-    [[_viewCardNumber.widthAnchor constraintEqualToConstant:60] setActive:YES];
+    NSLayoutConstraint *cardNumberWidthConstraint = [_viewCardNumber.widthAnchor constraintEqualToConstant:60];
+    [cardNumberWidthConstraint setActive:YES];
+    self.cardNumberWidthConstraint = cardNumberWidthConstraint;
     
     [self.viewCardContainer addSubview:_viewCardNumber];
     
@@ -260,9 +262,14 @@ typedef enum
       constraintEqualToAnchor:self.viewCardContainer.centerYAnchor]
      setActive:YES];
     
-    [[_viewCardNumber.leadingAnchor
-      constraintEqualToAnchor:self.viewCardContainer.leadingAnchor
-      constant:47] setActive:YES];
+    NSLayoutConstraint *cardNumberXConstraint =
+    [_viewCardNumber.leadingAnchor
+     constraintEqualToAnchor:self.viewCardContainer.leadingAnchor
+     constant:47];
+    
+    [cardNumberXConstraint setActive:YES];
+    
+    self.cardNumberXConstraint = cardNumberXConstraint;
 }
 
 - (void)createImagePaymentLogo
@@ -273,7 +280,9 @@ typedef enum
     imagePaymentLogo.contentMode = UIViewContentModeLeft;
     imagePaymentLogo.backgroundColor = [UIColor colorWithWhite:0 alpha:0];
     
-    [[imagePaymentLogo.widthAnchor constraintEqualToConstant:26] setActive:YES];
+    NSLayoutConstraint * logoWidthConstraint = [imagePaymentLogo.widthAnchor constraintEqualToConstant:26];
+    [logoWidthConstraint setActive:YES];
+    self.logoWidthConstraint = logoWidthConstraint;
     
     [imagePaymentLogo setContentHuggingPriority:251 forAxis:UILayoutConstraintAxisHorizontal];
     [imagePaymentLogo setContentHuggingPriority:251 forAxis:UILayoutConstraintAxisVertical];
@@ -284,9 +293,14 @@ typedef enum
       constraintEqualToAnchor:self.viewCardContainer.centerYAnchor]
      setActive:YES];
     
-    [[imagePaymentLogo.leadingAnchor
-      constraintEqualToAnchor:self.viewCardContainer.leadingAnchor
-      constant:15] setActive:YES];
+    NSLayoutConstraint *logoXConstraint =
+    [imagePaymentLogo.leadingAnchor
+     constraintEqualToAnchor:self.viewCardContainer.leadingAnchor
+     constant:15];
+
+    [logoXConstraint setActive:YES];
+
+    self.logoXConstraint = logoXConstraint;
     
     self.imagePaymentLogo = imagePaymentLogo;
 }
@@ -315,9 +329,14 @@ typedef enum
       constraintEqualToAnchor:_viewCardNumber.heightAnchor]
      setActive:YES];
     
-    [[_viewCardDate.centerXAnchor
-      constraintEqualToAnchor:self.viewCardContainer.centerXAnchor
-      constant:10] setActive:YES];
+    NSLayoutConstraint *cardDateXConstraint =
+    [self.viewCardContainer.centerXAnchor
+      constraintEqualToAnchor:_viewCardDate.centerXAnchor
+     constant:-10];
+
+    [cardDateXConstraint setActive:YES];
+    
+    self.cardDateXConstraint = cardDateXConstraint;
 }
 
 - (void)create_viewCardCVC
@@ -344,9 +363,14 @@ typedef enum
       constraintEqualToAnchor:_viewCardDate.heightAnchor]
      setActive:YES];
     
-    [[_viewCardCVC.trailingAnchor
-      constraintEqualToAnchor:self.viewCardContainer.trailingAnchor
-      constant:-16] setActive:YES];
+    NSLayoutConstraint *cardCVCXConstraint =
+    [self.viewCardContainer.trailingAnchor
+      constraintEqualToAnchor:_viewCardCVC.trailingAnchor
+     constant:16];
+
+    [cardCVCXConstraint setActive:YES];
+    
+    self.cardCVCXConstraint = cardCVCXConstraint;
 }
 
 - (void)createCardIObutton
@@ -363,9 +387,13 @@ typedef enum
     
     [self.viewCardContainer addSubview:cardIOButton];
     
-    [[cardIOButton.trailingAnchor
-      constraintEqualToAnchor:self.viewCardContainer.trailingAnchor]
-     setActive:YES];
+    NSLayoutConstraint *cardIOButtonXConstraint =
+    [self.viewCardContainer.trailingAnchor
+     constraintEqualToAnchor:cardIOButton.trailingAnchor];
+     
+    [cardIOButtonXConstraint setActive:YES];
+    
+    self.cardIOButtonXConstraint = cardIOButtonXConstraint;
     
     [[cardIOButton.centerYAnchor
       constraintEqualToAnchor:self.viewCardContainer.centerYAnchor]
@@ -394,9 +422,13 @@ typedef enum
     
     [self.viewCardContainer addSubview:nextButton];
     
-    [[nextButton.trailingAnchor
-      constraintEqualToAnchor:self.viewCardContainer.trailingAnchor]
-     setActive:YES];
+    NSLayoutConstraint *nextButtonXConstraint =
+    [self.viewCardContainer.trailingAnchor
+      constraintEqualToAnchor:nextButton.trailingAnchor];
+    
+    [nextButtonXConstraint setActive:YES];
+    
+    self.nextButtonXConstraint = nextButtonXConstraint;
     
     [[nextButton.centerYAnchor
       constraintEqualToAnchor:self.viewCardContainer.centerYAnchor]
