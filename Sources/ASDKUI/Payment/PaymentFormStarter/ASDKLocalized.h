@@ -20,9 +20,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#define LOC(key) [[ASDKLocalized sharedInstance] localizedStringForKey:(key)]
-#define LOCC(key) [[ASDKUI_Texts current].(key)]
-
 #define SMSLocaleIdentifierRU @"ru_ru"
 #define SMSLocaleIdentifierEN @"en_en"
 
@@ -40,6 +37,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)localizedStringForKey:(NSString *)key bundle:(NSBundle *)bundle localizedTable:(NSString *)table;
 - (NSString *)localizedStringForKey:(NSString *)key bundle:(NSBundle *)bundle;
 - (NSString *)localizedStringForKey:(NSString *)key;
+
+
+/*!
+*  @discussion Текущая локаль (или локаль устройства, или принудительно установленная локаль).
+*/
+- (NSString *)language;
 
 /*!
  *  @discussion Принудительно устанавливает локаль для локализации, незасисимо от локали устрйоства

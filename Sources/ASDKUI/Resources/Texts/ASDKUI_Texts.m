@@ -9,13 +9,15 @@
 #import "RussianTexts.h"
 #import "EnglishTexts.h"
 
+#import "ASDKLocalized.h"
+
 @implementation ASDKUI_Texts
 
 + (instancetype)current
 {
-    NSLocale * currentLocale = [NSLocale currentLocale];
+    NSString * currentLanguage = [ASDKLocalized sharedInstance].language;
     
-    if ([currentLocale.languageCode.lowercaseString isEqualToString:@"ru"]) {
+    if ([currentLanguage.lowercaseString isEqualToString:@"ru"]) {
         return [RussianTexts sharedInstance];
     } else {
         return [EnglishTexts sharedInstance];
