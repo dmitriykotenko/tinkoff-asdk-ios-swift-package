@@ -71,8 +71,6 @@ typedef NS_ENUM(NSInteger, CheckStateType)
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     
-    self.view.backgroundColor = [UIColor whiteColor];
-    
     return self;
 }
 
