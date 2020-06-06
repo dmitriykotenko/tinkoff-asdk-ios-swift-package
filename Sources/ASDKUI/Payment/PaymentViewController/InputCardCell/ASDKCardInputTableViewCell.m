@@ -768,6 +768,9 @@ typedef enum
 {
 	if (!_placeholderAttributes && self.placeholderColor)
 	{
+    NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+    NSLog(@"ForegroundColor: %@", self.placeholderColor);
+    
 		NSDictionary *placeholderAttributes = @{NSForegroundColorAttributeName:self.placeholderColor};
 		_placeholderAttributes = placeholderAttributes;
 	}
@@ -778,6 +781,9 @@ typedef enum
 {
 	if (!_invalidPlaceholderAttributes)
 	{
+    NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+    NSLog(@"ForegroundColor: %@", [UIColor redColor]);
+    
 		NSDictionary *invalidPlaceholderAttributes = @{NSForegroundColorAttributeName:[UIColor redColor]};
 		_invalidPlaceholderAttributes = invalidPlaceholderAttributes;
 	}

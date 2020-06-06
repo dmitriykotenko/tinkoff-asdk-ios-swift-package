@@ -119,6 +119,11 @@
 
 - (NSDictionary *)parametersForToken
 {
+    NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+    NSLog(@"Terminal key: %@", self.terminalKey);
+    NSLog(@"Password is nil? %@", self.password ? @"NO" : @"YES");
+    NSLog(@"Send email: %@", self.sendEmail);
+  
     NSMutableDictionary *parameters = [NSMutableDictionary dictionaryWithDictionary:@{kASDKTerminalKey : self.terminalKey,
                                                                                       kASDKPassword : self.password,
                                                                                       kASDKSendEmail : self.sendEmail}];

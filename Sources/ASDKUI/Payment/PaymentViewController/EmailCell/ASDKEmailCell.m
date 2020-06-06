@@ -65,7 +65,10 @@
     emailTextField.clearButtonMode = UITextFieldViewModeNever;
     emailTextField.keyboardType = UIKeyboardTypeEmailAddress;
     emailTextField.autocapitalizationType = UITextAutocapitalizationTypeNone;
-    
+
+    NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+    NSLog(@"ForegroundColor: %@", [ASDKDesign colorTextPlaceholder]);
+
     emailTextField.attributedPlaceholder =
     [[NSAttributedString alloc]
      initWithString:[ASDKUI_Texts current].acq_email_hint

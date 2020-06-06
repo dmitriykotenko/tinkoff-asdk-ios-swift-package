@@ -126,6 +126,9 @@
 	
 	if (self.titleLabel.text.length > 0)
 	{
+    NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+    NSLog(@"Font name: %@", self.titleLabel.font.fontName);
+    
 		CGRect frame = CGRectMake(0, 0, width - 30, 300);
 		
 		height += [self.titleLabel.text boundingRectWithSize:frame.size
@@ -136,6 +139,9 @@
 
 	if (self.descriptionLabel.text.length > 0)
     {
+        NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+        NSLog(@"Font name: %@", self.descriptionLabel.font.fontName);
+      
         CGRect frame = CGRectMake(0, 0, width - 30, 300);
 		
         height += [self.descriptionLabel.text boundingRectWithSize:frame.size

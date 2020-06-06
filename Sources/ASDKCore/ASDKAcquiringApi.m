@@ -224,6 +224,12 @@ typedef NS_ENUM(NSInteger, APIVersion)
                 success:(void (^)(ASDKInitResponse *response))success
                 failure:(void (^)(ASDKAcquringApiError *error))failure
 {
+    NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+    NSLog(@"Terminal key: %@", request.terminalKey);
+    NSLog(@"Amount: %@", request.amount);
+    NSLog(@"Order ID: %@", request.orderId);
+    NSLog(@"Token: %@", request.token);
+
     NSMutableDictionary *parameters = [NSMutableDictionary dictionaryWithDictionary:@{kASDKTerminalKey : request.terminalKey,
                                                                                       kASDKAmount      : request.amount,
                                                                                       kASDKOrderId     : request.orderId,
@@ -326,6 +332,11 @@ typedef NS_ENUM(NSInteger, APIVersion)
                     success:(void (^)(ASDKPaymentInfo *paymentInfo, ASDKPaymentStatus status))success
                     failure:(void (^)(ASDKAcquringApiError *error))failure
 {
+    NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+    NSLog(@"Terminal key: %@", request.terminalKey);
+    NSLog(@"Payment ID: %@", request.paymentId);
+    NSLog(@"Token: %@", request.token);
+
     NSMutableDictionary *parameters = @{kASDKTerminalKey : request.terminalKey,
                                         kASDKPaymentId   : request.paymentId,
                                         kASDKToken       : request.token}.mutableCopy;
@@ -347,6 +358,12 @@ typedef NS_ENUM(NSInteger, APIVersion)
                   success:(void (^)(ASDKPaymentInfo *paymentInfo, ASDKPaymentStatus status))success
                   failure:(void (^)(ASDKAcquringApiError *error))failure
 {
+    NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+    NSLog(@"Terminal key: %@", request.terminalKey);
+    NSLog(@"Payment ID: %@", request.paymentId);
+    NSLog(@"Rebill ID: %@", request.rebillId);
+    NSLog(@"Token: %@", request.token);
+    
     NSMutableDictionary *parameters = @{kASDKTerminalKey : request.terminalKey,
                                         kASDKPaymentId   : request.paymentId,
                                         kASDKRebillId    : request.rebillId,
@@ -368,6 +385,11 @@ typedef NS_ENUM(NSInteger, APIVersion)
                        success:(void (^)(ASDKGetCardListResponse *response))success
                        failure:(void (^)(ASDKAcquringApiError *error))failure
 {
+    NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+    NSLog(@"Terminal key: %@", request.terminalKey);
+    NSLog(@"Customer key: %@", request.customerKey);
+    NSLog(@"Token: %@", request.token);
+  
     NSMutableDictionary *parameters = @{kASDKTerminalKey : request.terminalKey,
                                         kASDKCustomerKey : request.customerKey,
                                         kASDKToken       : request.token}.mutableCopy;
@@ -389,6 +411,12 @@ typedef NS_ENUM(NSInteger, APIVersion)
                       success:(void (^)(ASDKRemoveCardResponse *response))success
                       failure:(void (^)(ASDKAcquringApiError *error))failure
 {
+    NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+    NSLog(@"Terminal key: %@", request.terminalKey);
+    NSLog(@"Card ID: %@", request.cardId);
+    NSLog(@"Customer key: %@", request.customerKey);
+    NSLog(@"Token: %@", request.token);
+  
     NSMutableDictionary *parameters = @{kASDKTerminalKey : request.terminalKey,
                                         kASDKCardId      : request.cardId,
                                         kASDKCustomerKey : request.customerKey,
@@ -411,6 +439,11 @@ typedef NS_ENUM(NSInteger, APIVersion)
 				  success:(void (^)(ASDKCancelResponse *data))success
 				  failure:(void (^)(ASDKAcquringApiError *error))failure
 {
+  NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+  NSLog(@"Terminal key: %@", request.terminalKey);
+  NSLog(@"Payment ID: %@", request.paymentId);
+  NSLog(@"Token: %@", request.token);
+  
 	NSDictionary *parameters = @{kASDKTerminalKey : request.terminalKey,
 								kASDKPaymentId   : request.paymentId,
 								kASDKToken       : request.token};
@@ -430,6 +463,12 @@ typedef NS_ENUM(NSInteger, APIVersion)
 					   success:(void (^)(ASDKResponseAddCardInit *info))success
 					   failure:(void (^)(ASDKAcquringApiError *error))failure
 {
+  NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+  NSLog(@"Terminal key: %@", request.terminalKey);
+  NSLog(@"CheckType: %@", request.checkType);
+  NSLog(@"Customer key: %@", request.customerKey);
+  NSLog(@"Token: %@", request.token);
+  
 	NSDictionary *parameters = @{kASDKTerminalKey: request.terminalKey, @"CheckType": request.checkType, @"CustomerKey": request.customerKey, kASDKToken: request.token};
 	
 	[self apiVersion:APIVersion_v2 path:@"AddCard" parameters:parameters success:^(NSDictionary *responseDictionary, NSURLResponse *response) {
@@ -444,6 +483,12 @@ typedef NS_ENUM(NSInteger, APIVersion)
 					 success:(void (^)(ASDKThreeDsData *data, ASDKResponseAttachCard *result, ASDKPaymentStatus status))success
 					 failure:(void (^)(ASDKAcquringApiError *error))failure
 {
+  NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+  NSLog(@"Terminal key: %@", request.terminalKey);
+  NSLog(@"CardData: %@", request.cardData);
+  NSLog(@"RequestKey: %@", request.requestKey);
+  NSLog(@"Token: %@", request.token);
+  
 	NSMutableDictionary *parameters = [NSMutableDictionary dictionaryWithDictionary:@{kASDKTerminalKey: request.terminalKey, @"CardData": request.cardData, @"RequestKey": request.requestKey, kASDKToken: request.token}];
 	
 	if ([request.additionalData.allKeys count] > 0)
@@ -466,6 +511,11 @@ typedef NS_ENUM(NSInteger, APIVersion)
 						  success:(void (^)(ASDKResponseGetAddCardState *respose))success
 						  failure:(void (^)(ASDKAcquringApiError *error))failure
 {
+  NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+  NSLog(@"Terminal key: %@", request.terminalKey);
+  NSLog(@"RequestKey: %@", request.requestKey);
+  NSLog(@"Token: %@", request.token);
+  
 	NSDictionary *parameters = @{kASDKTerminalKey: request.terminalKey, @"RequestKey": request.requestKey, kASDKToken: request.token};
 	
 	[self apiVersion:APIVersion_v2 path:@"GetAddCardState" parameters:parameters
@@ -484,6 +534,12 @@ typedef NS_ENUM(NSInteger, APIVersion)
 						   success:(void (^)(ASDKResponseGetAddCardState *response))success
 						   failure:(void (^)(ASDKAcquringApiError *error))failure
 {
+  NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+  NSLog(@"Amount: %@", request.amount);
+  NSLog(@"Terminal key: %@", request.terminalKey);
+  NSLog(@"RequestKey: %@", request.requestKey);
+  NSLog(@"Token: %@", request.token);
+  
 	NSDictionary *parameters = @{kASDKAmount: request.amount, kASDKTerminalKey: request.terminalKey, @"RequestKey": request.requestKey, kASDKToken: request.token};
 	
 	[self apiVersion:APIVersion_v2 path:@"SubmitRandomAmount" parameters:parameters

@@ -81,6 +81,10 @@
 
 - (NSDictionary *)parametersForToken
 {
+  NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+  NSLog(@"Terminal key: %@", [self terminalKey]);
+  NSLog(@"Password is nil? %@", [self password] ? @"NO" : @"YES");
+  
 	NSMutableDictionary *parameters = [NSMutableDictionary dictionaryWithDictionary:@{kASDKTerminalKey: [self terminalKey], kASDKPassword: [self password]}];
 
 	if (self.requestKey.length > 0)
