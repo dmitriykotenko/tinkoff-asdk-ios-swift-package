@@ -126,7 +126,7 @@
 	
 	if (self.titleLabel.text.length > 0)
 	{
-    NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+    NSLog(@"Possible Jetmed Crash: method %s, line %d, cmd %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromSelector(_cmd));
     NSLog(@"Font name: %@", self.titleLabel.font.fontName);
     
 		CGRect frame = CGRectMake(0, 0, width - 30, 300);
@@ -139,7 +139,7 @@
 
 	if (self.descriptionLabel.text.length > 0)
     {
-        NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+        NSLog(@"Possible Jetmed Crash: method %s, line %d, cmd %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromSelector(_cmd));
         NSLog(@"Font name: %@", self.descriptionLabel.font.fontName);
       
         CGRect frame = CGRectMake(0, 0, width - 30, 300);

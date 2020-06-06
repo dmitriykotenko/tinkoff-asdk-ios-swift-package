@@ -187,7 +187,7 @@
 
 - (CGSize)sizeWithFont:(UIFont *)font constrainedToSize:(CGSize)constraintSize inputString:(NSString *)inputString
 {
-    NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+    NSLog(@"Possible Jetmed Crash: method %s, line %d, cmd %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromSelector(_cmd));
     NSLog(@"Font name: %@", font.fontName);
   
     CGRect rect = [inputString boundingRectWithSize:constraintSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : font} context:NULL];
@@ -197,7 +197,7 @@
 
 - (CGSize)sizeForLabelWithFont:(UIFont *)font constrainedToSize:(CGSize)constraintSize inputString:(NSString *)inputString
 {
-    NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+    NSLog(@"Possible Jetmed Crash: method %s, line %d, cmd %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromSelector(_cmd));
     NSLog(@"Font name: %@", font.fontName);
   
     CGSize size = [inputString boundingRectWithSize:constraintSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : font} context:NULL].size;

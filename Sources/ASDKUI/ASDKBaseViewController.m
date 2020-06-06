@@ -36,7 +36,7 @@
 		self.navigationController.navigationBar.barStyle = [designConfiguration navigationBarStyle];
 		[self.navigationController.navigationBar setBackgroundImage:[ASDKUtils imageFromColor:[designConfiguration navigationBarColor]] forBarMetrics:UIBarMetricsDefault];
 
-    NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+    NSLog(@"Possible Jetmed Crash: method %s, line %d, cmd %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromSelector(_cmd));
     NSLog(@"ForegroundColor: %@", [designConfiguration navigationBarItemsTextColor]);
 
 		self.navigationController.navigationBar.barTintColor = [designConfiguration navigationBarColor];

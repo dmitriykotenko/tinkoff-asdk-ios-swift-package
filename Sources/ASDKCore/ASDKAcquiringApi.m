@@ -224,7 +224,7 @@ typedef NS_ENUM(NSInteger, APIVersion)
                 success:(void (^)(ASDKInitResponse *response))success
                 failure:(void (^)(ASDKAcquringApiError *error))failure
 {
-    NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+    NSLog(@"Possible Jetmed Crash: method %s, line %d, cmd %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromSelector(_cmd));
     NSLog(@"Terminal key: %@", request.terminalKey);
     NSLog(@"Amount: %@", request.amount);
     NSLog(@"Order ID: %@", request.orderId);
@@ -332,7 +332,7 @@ typedef NS_ENUM(NSInteger, APIVersion)
                     success:(void (^)(ASDKPaymentInfo *paymentInfo, ASDKPaymentStatus status))success
                     failure:(void (^)(ASDKAcquringApiError *error))failure
 {
-    NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+    NSLog(@"Possible Jetmed Crash: method %s, line %d, cmd %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromSelector(_cmd));
     NSLog(@"Terminal key: %@", request.terminalKey);
     NSLog(@"Payment ID: %@", request.paymentId);
     NSLog(@"Token: %@", request.token);
@@ -358,7 +358,7 @@ typedef NS_ENUM(NSInteger, APIVersion)
                   success:(void (^)(ASDKPaymentInfo *paymentInfo, ASDKPaymentStatus status))success
                   failure:(void (^)(ASDKAcquringApiError *error))failure
 {
-    NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+    NSLog(@"Possible Jetmed Crash: method %s, line %d, cmd %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromSelector(_cmd));
     NSLog(@"Terminal key: %@", request.terminalKey);
     NSLog(@"Payment ID: %@", request.paymentId);
     NSLog(@"Rebill ID: %@", request.rebillId);
@@ -385,7 +385,7 @@ typedef NS_ENUM(NSInteger, APIVersion)
                        success:(void (^)(ASDKGetCardListResponse *response))success
                        failure:(void (^)(ASDKAcquringApiError *error))failure
 {
-    NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+    NSLog(@"Possible Jetmed Crash: method %s, line %d, cmd %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromSelector(_cmd));
     NSLog(@"Terminal key: %@", request.terminalKey);
     NSLog(@"Customer key: %@", request.customerKey);
     NSLog(@"Token: %@", request.token);
@@ -411,7 +411,7 @@ typedef NS_ENUM(NSInteger, APIVersion)
                       success:(void (^)(ASDKRemoveCardResponse *response))success
                       failure:(void (^)(ASDKAcquringApiError *error))failure
 {
-    NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+    NSLog(@"Possible Jetmed Crash: method %s, line %d, cmd %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromSelector(_cmd));
     NSLog(@"Terminal key: %@", request.terminalKey);
     NSLog(@"Card ID: %@", request.cardId);
     NSLog(@"Customer key: %@", request.customerKey);
@@ -439,7 +439,7 @@ typedef NS_ENUM(NSInteger, APIVersion)
 				  success:(void (^)(ASDKCancelResponse *data))success
 				  failure:(void (^)(ASDKAcquringApiError *error))failure
 {
-  NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+  NSLog(@"Possible Jetmed Crash: method %s, line %d, cmd %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromSelector(_cmd));
   NSLog(@"Terminal key: %@", request.terminalKey);
   NSLog(@"Payment ID: %@", request.paymentId);
   NSLog(@"Token: %@", request.token);
@@ -463,7 +463,7 @@ typedef NS_ENUM(NSInteger, APIVersion)
 					   success:(void (^)(ASDKResponseAddCardInit *info))success
 					   failure:(void (^)(ASDKAcquringApiError *error))failure
 {
-  NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+  NSLog(@"Possible Jetmed Crash: method %s, line %d, cmd %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromSelector(_cmd));
   NSLog(@"Terminal key: %@", request.terminalKey);
   NSLog(@"CheckType: %@", request.checkType);
   NSLog(@"Customer key: %@", request.customerKey);
@@ -483,7 +483,7 @@ typedef NS_ENUM(NSInteger, APIVersion)
 					 success:(void (^)(ASDKThreeDsData *data, ASDKResponseAttachCard *result, ASDKPaymentStatus status))success
 					 failure:(void (^)(ASDKAcquringApiError *error))failure
 {
-  NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+  NSLog(@"Possible Jetmed Crash: method %s, line %d, cmd %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromSelector(_cmd));
   NSLog(@"Terminal key: %@", request.terminalKey);
   NSLog(@"CardData: %@", request.cardData);
   NSLog(@"RequestKey: %@", request.requestKey);
@@ -511,7 +511,7 @@ typedef NS_ENUM(NSInteger, APIVersion)
 						  success:(void (^)(ASDKResponseGetAddCardState *respose))success
 						  failure:(void (^)(ASDKAcquringApiError *error))failure
 {
-  NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+  NSLog(@"Possible Jetmed Crash: method %s, line %d, cmd %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromSelector(_cmd));
   NSLog(@"Terminal key: %@", request.terminalKey);
   NSLog(@"RequestKey: %@", request.requestKey);
   NSLog(@"Token: %@", request.token);
@@ -534,7 +534,7 @@ typedef NS_ENUM(NSInteger, APIVersion)
 						   success:(void (^)(ASDKResponseGetAddCardState *response))success
 						   failure:(void (^)(ASDKAcquringApiError *error))failure
 {
-  NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+  NSLog(@"Possible Jetmed Crash: method %s, line %d, cmd %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromSelector(_cmd));
   NSLog(@"Amount: %@", request.amount);
   NSLog(@"Terminal key: %@", request.terminalKey);
   NSLog(@"RequestKey: %@", request.requestKey);

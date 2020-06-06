@@ -119,7 +119,7 @@
 
 - (NSDictionary *)parametersForToken
 {
-    NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+    NSLog(@"Possible Jetmed Crash: method %s, line %d, cmd %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromSelector(_cmd));
     NSLog(@"Terminal key: %@", self.terminalKey);
     NSLog(@"Password is nil? %@", self.password ? @"NO" : @"YES");
     NSLog(@"Send email: %@", self.sendEmail);

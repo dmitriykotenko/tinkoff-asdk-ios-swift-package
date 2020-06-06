@@ -66,7 +66,7 @@
     emailTextField.keyboardType = UIKeyboardTypeEmailAddress;
     emailTextField.autocapitalizationType = UITextAutocapitalizationTypeNone;
 
-    NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+    NSLog(@"Possible Jetmed Crash: method %s, line %d, cmd %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromSelector(_cmd));
     NSLog(@"ForegroundColor: %@", [ASDKDesign colorTextPlaceholder]);
 
     emailTextField.attributedPlaceholder =

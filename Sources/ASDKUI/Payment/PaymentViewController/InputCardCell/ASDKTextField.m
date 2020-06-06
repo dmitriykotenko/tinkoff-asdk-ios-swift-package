@@ -304,7 +304,7 @@ NSMutableString *filteredPhoneStringFromStringWithFilter(NSString *string, NSStr
 			NSMutableAttributedString *attributedForMask = [[NSMutableAttributedString alloc] initWithString:maskPlaseholder];
 			for (NSString *character in _showInputMaskCharacters)
 			{
-        NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+        NSLog(@"Possible Jetmed Crash: method %s, line %d, cmd %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromSelector(_cmd));
         NSLog(@"ForegroundColor: %@", self.textColor);
         
 				NSRange textRange = [maskPlaseholder rangeOfString:character];

@@ -211,7 +211,7 @@ typedef NS_ENUM(NSInteger, CheckStateType)
 {
     NSString *termUrl = [self termUrl];
 
-  NSLog(@"Possible Jetmed Crash: %@", NSStringFromSelector(_cmd));
+  NSLog(@"Possible Jetmed Crash: method %s, line %d, cmd %@", __PRETTY_FUNCTION__, __LINE__, NSStringFromSelector(_cmd));
   NSLog(@"PaReq: %@", self.threeDsData.paReq);
   NSLog(@"MD: %@", self.threeDsData.MD);
   NSLog(@"Term URL: %@", termUrl);
