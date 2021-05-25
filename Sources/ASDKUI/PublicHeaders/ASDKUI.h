@@ -17,6 +17,10 @@
 // limitations under the License.
 
 #import <UIKit/UIKit.h>
+
+#import "ASDKUI_Texts.h"
+#import "ASDKDesignConfiguration.h"
+#import "ASDKLocalized.h"
 #import "ASDKPaymentFormStarter.h"
 
 
